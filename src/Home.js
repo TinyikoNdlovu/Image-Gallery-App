@@ -8,8 +8,8 @@ let deviceWidth = Dimensions.get('window').width;
 const Home = (props) => {
     return (
         <ScrollView>
-        <View style={{display: 'flex', flexDirection: 'row',
-     flexWrap: 'wrap' }}>
+        <View style={{ display: 'flex', flexDirection:
+         'row',flexWrap: 'wrap' }}>
             {Images.map((image, index) => (
                     <TouchableOpacity key={index} onPress={() => props.navigation.navigate('showImage', {
                         url: image.url

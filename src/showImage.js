@@ -7,7 +7,8 @@ let deviceWidth = Dimensions.get('window').width;
 const showImage = (props) => {
     return (
         <View>
-            <ImageBackground source={props.route.params.url} style={{}} />
+            <ImageBackground source={props.route.params.url} 
+            style={{height: deviceHeight, width: deviceWidth}} />
         </View>
     )
 }
